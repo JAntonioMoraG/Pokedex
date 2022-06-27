@@ -1,0 +1,86 @@
+@font-face {
+    font-family: pokemon;
+    src: url(../fonts/Pokemon\ Solid.ttf);
+}
+*{
+    font-family: pokemon;
+}
+h1{
+    text-align: center;
+    color: red;
+    -webkit-text-stroke: 3px black;
+    font-size: 60px;
+    letter-spacing: 6px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-image: url(https://p4.wallpaperbetter.com/wallpaper/503/189/157/pokemon-video-games-pixel-art-pixels-wallpaper-preview.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+input{
+    width:280px;
+    height: 25px;
+    border-radius: 40px;
+    background-color: rgb(58, 146, 228);
+    color: white;
+    font-size: 20px;
+    -webkit-text-stroke: .5px black;
+    text-align: center;
+}
+::placeholder{
+    text-align: center;
+    font-size: 18px;
+    -webkit-text-stroke: .5px black;
+    color: white;
+}
+.titulos{
+    color: white;
+    letter-spacing: 1.5px;
+    -webkit-text-stroke: 1px black;
+    font-size: 26px;
+}
+.datos{
+    background-color: rgb(58, 146, 228);
+    width: 100%;
+}
+.imagen{
+    width: 90%;
+    margin-left: 4%;
+    background-color: gray;
+}
+.busqueda{
+    margin-top: 10%;
+    margin-bottom: 2%;
+}
+button{
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    color:white;
+    text-align: center;
+}
+.stats{
+    background-color: gray;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.flex-item{
+    text-align: center;
+    border: 1px solid BLACK;
+    background-color: red;
+}
+.display-column{
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (min-width:1024px) {
+    .container{
+        justify-content: center;
+    }
+    
+}

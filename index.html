@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex de Tony</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <h1>Pokedex de Tony</h1>
+    <section class="container">
+        <article class="flex-item">
+            <div class="datos">
+                <p class="titulos">Nombre:<label id="pokeName">~</label></p>
+                <p class="titulos">#<label id="pokeId"></label></p>
+                <p class="titulos">Tipo: <label id="pokeType"></label></p>
+            </div>
+            <div class="imagen">
+                <img src="./Images/pokeball.png" alt="Pokemon" id="pokeImg" width="150px"><br>
+            </div>
+            <div class="busqueda">
+                <input type="text" placeholder="Ingresa el pokemon a buscar" id="name" name="neme">
+                <button onclick="fetchPokemon()">b</button>
+            </div>
+        </article>
+        <article class="flex-item estadisticas">
+            <div class="stats">
+                <p class="titulos">Estadisticas generales: </p>
+                <label id="pokeStats" class="titulos"></label>
+            </div>
+        </article>
+    </section>
+    <section class="container">
+        <article class="flex-item display-column">
+            <p class="titulos">Movimientos</p>
+            <label id="pokeMoves" class="titulos"></label>
+        </article>
+    </section>    
+</body>
+<footer>
+    <script src="./JavaScript/pokedex.js"></script>
+</footer>
+</html>
